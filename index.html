@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de pdf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="myForm" action="#">
+        <div class="data-hora">
+            <input id="Data" type="date" name="Data">
+            <input id="Hora" type="time" name="Horário">
+        </div>
+
+        <div class="form-group">
+            <input id="nome" type="text" name="Nome" required>
+            <label for="nome">Nome completo</label>
+        </div>
+        
+        <div class="form-group">
+            <input id="data-nascimento" type="text" name="Data-nascimento" required>
+            <label for="data-nascimento">Data de nascimento</label>
+        </div>
+        
+        <div class="form-group">
+            <input id="cpf" type="text" name="Cpf" required maxlength="11">
+            <label for="cpf">Cpf</label>
+        </div>
+        
+        <div class="form-group">
+            <input id="profissão" type="text" name="Profissão" required>
+            <label for="profissão">Profissão</label>
+        </div>
+        
+        <div class="pdf">
+            <img src="img/download.png" alt="img-pdf">
+            <p>Gerar pdf</p>
+        </div>
+    </form>
+
+    <script src="pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+
+    
+</body>
+</html>
